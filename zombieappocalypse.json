@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 268,
+    "build": 269,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -6375,6 +6375,80 @@
       "name": "isSpeakerActivated",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "Chapter1",
+      "type": "structure",
+      "children": [
+        {
+          "name": "level1_poin",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "level2_poin",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "level3_poin",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "Chapter2",
+      "type": "structure",
+      "children": [
+        {
+          "name": "level1_poin",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "level2_poin",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "level3_poin",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "Chapter3",
+      "type": "structure",
+      "children": [
+        {
+          "name": "level1_poin",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "level2_poin",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "level3_poin",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "UserData",
+      "type": "structure",
+      "children": [
+        {
+          "name": "maxCoin",
+          "type": "number",
+          "value": 0
+        }
+      ]
     }
   ],
   "layouts": [
@@ -6400,7 +6474,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6455105703311492,
+        "zoomFactor": 0.8141881203709929,
         "windowMask": false,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -6443,23 +6517,6 @@
           "x": 481,
           "y": 373,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 14,
-          "height": 726,
-          "keepRatio": true,
-          "layer": "",
-          "name": "bg_awal",
-          "persistentUuid": "4fc08768-5c79-4330-a11d-ed080f418293",
-          "width": 1293,
-          "x": -13,
-          "y": -7,
-          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7947,7 +8004,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6897782140104686,
+        "zoomFactor": 0.49508400737490255,
         "windowMask": true,
         "selectedLayer": "",
         "gameEditorMode": "instances-editor"
@@ -8107,8 +8164,8 @@
           "name": "scoreValue",
           "persistentUuid": "ea4aeda0-ba43-44da-a6bd-7e14d4e8a7e9",
           "width": 0,
-          "x": 1114,
-          "y": 17,
+          "x": 973,
+          "y": 69,
           "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
@@ -8336,11 +8393,11 @@
           "height": 0,
           "keepRatio": true,
           "layer": "CompeleteUI",
-          "name": "CompleteScoreText",
+          "name": "current_CompleteScoreText",
           "persistentUuid": "01690e86-fd73-42a6-bc21-1563b1160d2f",
           "width": 0,
-          "x": 483,
-          "y": 175,
+          "x": 485,
+          "y": 120,
           "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
@@ -8353,11 +8410,11 @@
           "height": 56,
           "keepRatio": true,
           "layer": "CompeleteUI",
-          "name": "ScoreText",
+          "name": "current_ScoreText",
           "persistentUuid": "f7365998-bae3-4bb3-a8c4-1b42cc10828b",
           "width": 698,
-          "x": 268,
-          "y": 259,
+          "x": 270,
+          "y": 204,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -8374,7 +8431,7 @@
           "persistentUuid": "766d0d06-beda-49d1-b2cf-597d0f6a2ca8",
           "width": 91,
           "x": 415,
-          "y": 410,
+          "y": 475,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -8391,7 +8448,7 @@
           "persistentUuid": "1f847f31-45fe-4d06-9a33-f576ac81bec9",
           "width": 91.20000000000002,
           "x": 731,
-          "y": 406,
+          "y": 471,
           "zOrder": 32,
           "numberProperties": [],
           "stringProperties": [],
@@ -8407,8 +8464,8 @@
           "name": "count_zombie_hit_value",
           "persistentUuid": "70cdcc6c-26a1-49fb-882a-9ed1227afb1b",
           "width": 196,
-          "x": 1029,
-          "y": 67,
+          "x": 982,
+          "y": 115,
           "zOrder": 35,
           "numberProperties": [],
           "stringProperties": [],
@@ -8423,9 +8480,58 @@
           "name": "count_zombie_max_hit_value",
           "persistentUuid": "0117e1b9-083e-4edd-881a-4e65d446f540",
           "width": 0,
-          "x": 1224,
-          "y": 66,
+          "x": 1177,
+          "y": 114,
           "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "CompeleteUI",
+          "name": "highest_CompleteScoreText",
+          "persistentUuid": "945ab451-1165-4fc4-9870-3908ca41b791",
+          "width": 0,
+          "x": 464,
+          "y": 289,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 51,
+          "keepRatio": true,
+          "layer": "CompeleteUI",
+          "name": "highest_ScoreText",
+          "persistentUuid": "7be89e50-0726-4bca-bc58-574ac8394d32",
+          "width": 708,
+          "x": 263,
+          "y": 350,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "GameUI",
+          "name": "highest_scoreValue_text",
+          "persistentUuid": "ec589cc3-7d19-4a1d-92a9-21c1f987871c",
+          "width": 0,
+          "x": 972,
+          "y": 23,
+          "zOrder": 39,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9323,9 +9429,9 @@
               "yGrabOffset": 0
             },
             {
-              "maxSpeed": 250,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "maxSpeed": 250,
               "acceleration": 1500,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -10368,7 +10474,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Score: 0",
+          "string": "Current Score: 0",
           "font": "349e61a855adefea40c789fda27ec8fb8664af49c28d6495da8a56dba40c3704_PTSans-Bold.ttf",
           "textAlignment": "left",
           "characterSize": 32,
@@ -10391,7 +10497,7 @@
             "shadowOpacity": 127,
             "smoothed": true,
             "underlined": false,
-            "text": "Score: 0",
+            "text": "Current Score: 0",
             "font": "349e61a855adefea40c789fda27ec8fb8664af49c28d6495da8a56dba40c3704_PTSans-Bold.ttf",
             "textAlignment": "left",
             "verticalTextAlignment": "top",
@@ -11531,7 +11637,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": true,
-          "name": "CompleteScoreText",
+          "name": "current_CompleteScoreText",
           "persistentUuid": "9484f899-9305-49a1-aeb6-9a7281f44171",
           "smoothed": true,
           "type": "TextObject::Text",
@@ -11575,7 +11681,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "ScoreText",
+          "name": "current_ScoreText",
           "persistentUuid": "55cb4025-8d52-4566-992d-b0b7df5758e6",
           "smoothed": true,
           "type": "TextObject::Text",
@@ -11702,6 +11808,138 @@
             "lineHeight": 0,
             "color": "255;130;130"
           }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": true,
+          "name": "highest_CompleteScoreText",
+          "persistentUuid": "c92dc6a1-3301-4e5e-bd24-25077dbff716",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Skor Tertinggi",
+          "font": "f66c77b4a9335111fb8db2dc84354aeb1fc92eb0db7c7302e849c4d421eec02c_CaesarDressing-Regular.ttf",
+          "textAlignment": "left",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": true,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Skor Tertinggi",
+            "font": "f66c77b4a9335111fb8db2dc84354aeb1fc92eb0db7c7302e849c4d421eec02c_CaesarDressing-Regular.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "highest_ScoreText",
+          "persistentUuid": "e12d3f90-4842-4e6c-854e-6ea83530608e",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "0",
+          "font": "f66c77b4a9335111fb8db2dc84354aeb1fc92eb0db7c7302e849c4d421eec02c_CaesarDressing-Regular.ttf",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "0",
+            "font": "f66c77b4a9335111fb8db2dc84354aeb1fc92eb0db7c7302e849c4d421eec02c_CaesarDressing-Regular.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 50,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "highest_scoreValue_text",
+          "persistentUuid": "b95d362e-e139-4ad2-81de-0508dc968fb6",
+          "smoothed": true,
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Highest Score: 0",
+          "font": "349e61a855adefea40c789fda27ec8fb8664af49c28d6495da8a56dba40c3704_PTSans-Bold.ttf",
+          "textAlignment": "left",
+          "characterSize": 32,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          },
+          "content": {
+            "bold": true,
+            "isOutlineEnabled": true,
+            "isShadowEnabled": true,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "Highest Score: 0",
+            "font": "349e61a855adefea40c789fda27ec8fb8664af49c28d6495da8a56dba40c3704_PTSans-Bold.ttf",
+            "textAlignment": "left",
+            "verticalTextAlignment": "top",
+            "characterSize": 32,
+            "lineHeight": 0,
+            "color": "0;0;0"
+          }
         }
       ],
       "objectsFolderStructure": {
@@ -11756,6 +11994,9 @@
             "objectName": "scoreValue"
           },
           {
+            "objectName": "highest_scoreValue_text"
+          },
+          {
             "objectName": "count_zombie_hit_value"
           },
           {
@@ -11774,10 +12015,16 @@
             "objectName": "bar_menu"
           },
           {
-            "objectName": "CompleteScoreText"
+            "objectName": "highest_CompleteScoreText"
           },
           {
-            "objectName": "ScoreText"
+            "objectName": "current_CompleteScoreText"
+          },
+          {
+            "objectName": "current_ScoreText"
+          },
+          {
+            "objectName": "highest_ScoreText"
           }
         ]
       },
@@ -11861,7 +12108,18 @@
                 "scoreValue",
                 "Text",
                 "=",
-                "\"Score \" + scorePoinValue"
+                "\"Current Score: \" + scorePoinValue"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "highest_scoreValue_text",
+                "Text",
+                "=",
+                "\"Highest Score: \" + Chapter1.level1_poin"
               ]
             },
             {
@@ -11933,8 +12191,35 @@
                 "=",
                 "\"/\"+max_zombie_hit"
               ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "highest_ScoreText",
+                "Text",
+                "=",
+                "Chapter1.level1_poin"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"level1_poin\"",
+                "\"1\"",
+                "",
+                "Chapter1.level1_poin"
+              ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         },
         {
           "colorB": 228,
@@ -13737,7 +14022,7 @@
                 "scoreValue",
                 "Text",
                 "=",
-                "\"Score \" + scorePoinValue"
+                "\"Current Score: \" + scorePoinValue"
               ]
             }
           ]
@@ -13775,7 +14060,7 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "ScoreText",
+                "current_ScoreText",
                 "Text",
                 "=",
                 "scorePoinValue"
@@ -13883,6 +14168,87 @@
                 "",
                 "\"CompeleteUI\""
               ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "highest_scoreValue_text",
+                "Text",
+                "=",
+                "\"Highest Score: \" + Chapter1.level1_poin"
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "GameComplete_highest_score",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "scorePoinValue",
+                ">=",
+                "Chapter1.level1_poin"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"level1_poin\"",
+                "\"1\"",
+                "Chapter1.level1_poin"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Chapter1.level1_poin",
+                "=",
+                "scorePoinValue"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "highest_ScoreText",
+                "Text",
+                "=",
+                "Chapter1.level1_poin"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "highest_scoreValue_text",
+                "Text",
+                "=",
+                "\"Highest Score: \" + Chapter1.level1_poin"
+              ]
             }
           ]
         }
@@ -13902,7 +14268,7 @@
           "isLocked": true,
           "name": "cloud_bg",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
@@ -13956,7 +14322,7 @@
           "isLocked": true,
           "name": "background",
           "renderingType": "",
-          "visibility": false,
+          "visibility": true,
           "cameras": [],
           "effects": [
             {
